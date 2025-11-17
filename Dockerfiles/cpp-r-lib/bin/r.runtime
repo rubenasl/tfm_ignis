@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+  echo "[ERROR] Debes pasar un archivo R como argumento"
+  exit 1
+fi
+
+exec /opt/ignis/bin/exec_r_demo.sh "$1"
